@@ -1,0 +1,45 @@
+{
+  "name": "nativescript-np-audioplayer",
+  "version": "1.0.0",
+  "description": "NativeScript plugin to play audio.",
+  "main": "audioplayer",
+  "typings": "audioplayer.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "2.5.0",
+      "ios": "2.5.0"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.ios": "npm run preparedemo; cd demo; tns run ios",
+    "demo.android": "npm run preparedemo; cd demo; tns run android",
+    "preparedemo": "npm run build; cd demo; tns plugin remove nativescript-np-audioplayer; tns plugin add ..; tns install",
+    "setup": "cd demo; npm i; cd ..; npm i; npm run build; cd demo; tns plugin add ..; cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newpointe/nativescript-np-audioplayer.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "TypeScript",
+    "Android",
+    "iOS",
+    "music",
+    "audio"
+  ],
+  "author": "Tyler Schrock <tschrock123@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/newpointe/nativescript-np-audioplayer/issues"
+  },
+  "license": "NONE",
+  "homepage": "https://github.com/newpointe/nativescript-np-audioplayer",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tns-core-modules": "~2.5.2",
+    "tns-platform-declarations": "~2.5.2",
+    "typescript": "~2.2.1"
+  }
+}

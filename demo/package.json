@@ -1,0 +1,38 @@
+{
+  "name": "newpointe-audioplayer-demo",
+  "version": "0.0.1",
+  "description": "NewPointe AudioPlayer Demo",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "org.newpointe.audioplayer-demo",
+    "tns-ios": {
+      "version": "2.5.0"
+    },
+    "tns-android": {
+      "version": "2.5.0"
+    }
+  },
+  "dependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "nativescript-angular": "~1.5.1",
+    "nativescript-np-audioplayer": "file:..",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "~5.2.0",
+    "tns-core-modules": "2.5.2",
+    "zone.js": "~0.8.2"
+  },
+  "devDependencies": {
+    "nativescript-dev-android-snapshot": "^0.*.*",
+    "nativescript-dev-typescript": "~0.3.5",
+    "typescript": "~2.1.0"
+  }
+}

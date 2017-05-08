@@ -1,0 +1,11 @@
+*.js
+!audioplayer.common.js
+!audioplayer.android.js
+!audioplayer.ios.js
+*.js.map
+*.log
+.DS_Store
+.vscode
+node_modules
+demo/platforms
+demo/node_modules

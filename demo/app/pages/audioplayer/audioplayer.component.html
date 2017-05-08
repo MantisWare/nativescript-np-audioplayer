@@ -1,0 +1,16 @@
+<DockLayout height="100%" backgroundColor="#404040">
+    <DockLayout dock="top" backgroundColor="#fff" padding="5">
+        <StackLayout>
+            <Label [text]="playerTitle" horizontalAlignment="center" fontSize="24"></Label>
+            <Label [text]="playerSubtitle" horizontalAlignment="center"></Label>
+        </StackLayout>
+    </DockLayout>
+    <DockLayout dock="bottom" backgroundColor="#fff" padding="5">
+        <Label dock="left" [text]="playerPlayButtonText" class="button-icon" (tap)="onPlayButtonClick()"></Label>
+        <Label dock="right" [text]="playerTimecodeText" fontSize="12" textAlignment="center" [width]="playerTimecodeWidth"></Label>
+        <StackLayout verticalAlignment="center">
+            <Seekbar [value]="playerTimelineProgress" (seek)="onSeekEvent($event)"></Seekbar>
+        </StackLayout>
+    </DockLayout>
+    <Image [src]="playerImageCache?.imageSrc"></Image>
+</DockLayout>

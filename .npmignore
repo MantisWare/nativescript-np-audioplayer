@@ -1,0 +1,9 @@
+*.gif
+*.png
+*.log
+*.map
+*.ts
+!*.d.ts
+references.d.ts
+tsconfig.json
+demo/
